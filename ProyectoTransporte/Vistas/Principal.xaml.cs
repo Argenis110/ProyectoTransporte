@@ -16,11 +16,11 @@ public partial class Principal : ContentPage
 
     private void Iniciar_Button_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new Vistas.nuevaCuenta());
+        
     }
 
     private void BtnIniciar_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new Vistas.nuevaCuenta());
+        
     }
 }

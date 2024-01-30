@@ -66,4 +66,9 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Modelo de vista\" />
+	  <Folder Include="Servicios\" />
+	</ItemGroup>
+
 </Project>

@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using ProyectoTransporte.Modelo_de_vista;
 using ProyectoTransporte.Vistas;
 
 namespace ProyectoTransporte

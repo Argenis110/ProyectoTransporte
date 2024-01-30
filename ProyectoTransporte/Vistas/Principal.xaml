@@ -15,55 +15,50 @@
             <Frame BackgroundColor="SkyBlue" HeightRequest="60" WidthRequest="60" CornerRadius="30" Padding="0" Margin="0,100,0,0" HorizontalOptions="Center">
                 <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"></Image>
             </Frame>
+
         </StackLayout>
-        <Grid RowSpacing="5" Grid.Row="1" Margin="20,0,20,100">
+        <Grid RowSpacing="5" Grid.Row="1" Margin="20,0,20,60">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="60"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="auto"/>
-                <RowDefinition Height="70"/>
+                <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Grid.Row="1" Text="Bienvenidos!" TextColor="Black" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0" Margin="0"/>
+            <Label Grid.Row="1" Text="Bienvenidos!" TextColor="Black" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0" CharacterSpacing="2"/>
             <Label Grid.Row="2" Text="Inicie Sesion" TextColor="Black" HorizontalOptions="Center" FontSize="Subtitle"/>
-            
-            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
+            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="25" Margin="0,35,0,0">
                 <Frame BackgroundColor="Transparent" BorderColor="LightBlue" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                     <StackLayout Orientation ="Horizontal" >
                         <Frame BackgroundColor="SkyBlue" WidthRequest="40" HeightRequest="40"  CornerRadius="30" Padding="0" Margin="5" >
                             <Image Source="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_user2-256.png" Aspect="AspectFill" Margin="0"/>
                         </Frame>
-                        <Entry Text="{Binding usuario}" Placeholder="Usuario" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
-                    </StackLayout>                     
-                </Frame>              
-            </StackLayout>
-            <StackLayout  Margin="0,15,0,0" Grid.Row="4" Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                <Frame BackgroundColor="Transparent" BorderColor="LightBlue" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                    <StackLayout Orientation ="Horizontal"  >
-                        <Frame BackgroundColor="SkyBlue"  WidthRequest="40" HeightRequest="40"  CornerRadius="30" Padding="0" Margin="5" >
-                            <Image Source="https://cdn0.iconfinder.com/data/icons/basic-ui-elements-round/700/09_lock-256.png" Aspect="AspectFill" Margin="0"/>
-                        </Frame>
-                        <Entry Text="{Binding contraseña}" Placeholder="Contraseña"  TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
-                    </StackLayout>
+                        <Entry Text="" Placeholder="Usuario" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+
+                    </StackLayout>                    
                 </Frame>
+                
+                    <Frame BackgroundColor="Transparent" BorderColor="LightBlue" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <StackLayout Orientation ="Horizontal"  >
+                            <Frame BackgroundColor="SkyBlue"  WidthRequest="40" HeightRequest="40"  CornerRadius="30" Padding="0" Margin="0" >
+                                <Image Source="https://cdn0.iconfinder.com/data/icons/basic-ui-elements-round/700/09_lock-256.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry Text="" Placeholder="Contraseña"  TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        </StackLayout>
+                    </Frame>
+                <StackLayout Margin="0,40,0,0">
+                    <Button x:Name="Button_IniciarSesion" Grid.Row="4" Text="Iniciar Sesion" Clicked="BtnIniciar_Clicked" BackgroundColor="Green" TextColor="White" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" />
 
-
-                <Button x:Name="Button_IniciarSesion" Text="Iniciar Sesion" BackgroundColor="Green" TextColor="White" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" Margin="0,50,0,0" Clicked="Iniciar_Button_Clicked">
-                    
-                </Button>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0" Padding="0">
-                    <Label Text="Nuevo Usuario?" TextColor="Black" FontSize="Small" Margin="0,13,0,0"/>
-                    <Button x:Name="Button_NuevaCuenta" Grid.Row="5" Text="Crear cuenta" BackgroundColor="Transparent" BorderColor="Transparent" FontAttributes="Bold" FontSize="Small" Clicked="NuevaCuenta_Clicked" HorizontalOptions="Center">
-                        
-                    </Button>
+                    <Label Grid.Row="5" Text="Nuevo Usuario?" TextColor="Black" FontSize="Small" Margin="0,13,0,0" HorizontalOptions="Center" />
+                    <Button x:Name="Button_NuevaCuenta" Grid.Row="5" Text="Crear cuenta" TextColor="Green" BackgroundColor="Transparent" BorderColor="Transparent" FontAttributes="Bold" FontSize="Small" Clicked="NuevaCuenta_Clicked" HorizontalOptions="Center" />
                 </StackLayout>
+                                 
+               
             </StackLayout>
-
-
+            
         </Grid>
-    </Grid>     
-
-
+    </Grid> 
 </ContentPage>
