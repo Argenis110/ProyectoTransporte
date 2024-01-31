@@ -61,6 +61,12 @@
 	  <MauiXaml Update="Vistas\nuevaCuenta.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Vistas\Pagina1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Vistas\Pagina2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Vistas\Principal.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

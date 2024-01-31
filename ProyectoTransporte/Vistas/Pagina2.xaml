@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTransporte.Vistas.Pagina2"
+            Title="Registro de Conductor"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+    <Grid BackgroundColor="White" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0"  Text="Registro de Conductor" FontAttributes="Bold" Margin="0,15,0,50" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Title" />
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Nombre:" VerticalOptions="Center" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" Margin="10,0,0,0" />
+
+            <Entry Grid.Row="0" Grid.Column="1" x:Name="EntryNombre" Placeholder="Ingrese su nombre" Margin="10,0,0,0" />
+            <Label Grid.Row="1" Grid.Column="0" Text="Apellido:" VerticalOptions="Center" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" Margin="10,0,0,0" />
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="EntryApellido" Placeholder="Ingrese su apellido" Margin="10,0,0,0" />
+            <Label Grid.Row="2" Grid.Column="0" Text="Cédula:" VerticalOptions="Center"  TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" Margin="10,0,0,0" />
+            <Entry Grid.Row="2" Grid.Column="1" x:Name="EntryCedula" Placeholder="Ingrese su cédula" Margin="10,0,0,0" />
+            <Label Grid.Row="3" Grid.Column="0" Text="Teléfono:" VerticalOptions="Center"  TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" Margin="10,0,0,0" />
+            <Entry Grid.Row="3" Grid.Column="1" x:Name="EntryTelefono" Placeholder="Ingrese su teléfono" Margin="10,0,0,0" />
+            <Label Grid.Row="4" Grid.Column="0" Text="Email:" VerticalOptions="Center"   TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" Margin="10,0,0,0"/>
+            <Entry Grid.Row="4" Grid.Column="1" x:Name="EntryEmail" Placeholder="Ingrese su email" Margin="10,0,0,0" />
+            <Label Grid.Row="5" Grid.Column="0" Text="Tipo de Licencia:" VerticalOptions="Center" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" Margin="10,0,0,0" />
+            <Entry Grid.Row="5" Grid.Column="1" x:Name="EntryTipoLicencia" Placeholder="Ingrese el tipo de licencia" Margin="10,0,0,0" />
+        </Grid>
+        <Grid Grid.Row="2" ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnadjuntar" Grid.Row="0" Text="Adjuntar archivo" Clicked="AdjuntarArchivo_Clicked" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="Black" BorderColor="Azure" Margin="20" />
+            <Button x:Name="btnguardar" Grid.Row="1" Text="Guardar" Clicked="Button_Clicked" HorizontalOptions="Center" Margin="20" />
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using ProyectoTransporte.Vistas;
 
 namespace ProyectoTransporte
 {
@@ -23,5 +22,5 @@ namespace ProyectoTransporte
             return builder.Build();
         }
     }
-    }
+}
 
